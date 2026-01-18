@@ -1,0 +1,51 @@
+
+import java.util.Scanner;
+
+public class MatrimonyApp
+{
+	public static void main(String[] args) {
+		System.out.println("main method started !!");
+		System.out.println("Vcube Matrimoial site !!");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Can you tell your Full name : ");
+		String name = sc.nextLine();
+		System.out.println("Hello mr: " + name);
+		System.out.println("Enter your assets & salary ..?");
+		double assets = sc.nextDouble();
+		System.out.println("Salary also  ?");
+		double salary = sc.nextDouble();
+		if (assets >= 50000000.00 && salary >= 1500000.00) {
+			System.out.println("Great to know !! lets continue the discussion ");
+			System.out.println("Enter your age :");
+			int age = sc.nextInt();
+			if (age <= 27 && age >= 22) {
+				System.out.println("Oh nice !! your age is matching with our profile !");
+				System.out.println("Enter your height ");
+				float height = sc.nextFloat();
+				if (height >= 5.6 && height <= 6.2) {
+					System.out.println("Okay !! we can proceed furthur !!");
+					System.out.println("Enter your weight !!");
+					double weight = sc.nextDouble();
+					if (weight >= 65 && weight <= 75) {
+						System.out.println("We almost good, Lets discuss more !!");
+						System.out.println("Do you have siblings ..? ");
+						boolean sibStatus = sc.nextBoolean();
+						if (!sibStatus) {
+							System.out.println("Yes !! We will contact later !!");
+						} else {
+							System.out.println("Sorry !! we didn't expect !! you can leave for the day ");
+						}
+					} else {
+						System.out.println("You must need to gym, you profile is not matching ");
+					}
+				} else {
+					System.out.println("You are too short or too height not matchinh ");
+				}
+			} else {
+				System.out.println("sorry !! your age is not matching with our profile !");
+			}
+		} else {
+			System.out.println("Sorry !! You can leave for the day !");
+		}
+	}
+}
